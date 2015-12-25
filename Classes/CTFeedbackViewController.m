@@ -218,6 +218,7 @@ typedef NS_ENUM(NSInteger, CTFeedbackSection){
 	self.additionCellItem = [CTFeedbackAdditionInfoCellItem new];
     self.additionCellItem.value = CTFBLocalizedString(@"Additional detail");
     self.additionCellItem.action = ^(CTFeedbackViewController *sender){
+    [weakSelf.view endEditing:YES];
 		UIActionSheet *choiceSheet = [[UIActionSheet alloc] initWithTitle:nil
                                                                  delegate:weakSelf
                                                         cancelButtonTitle:CTFBLocalizedString(@"Cancel")
