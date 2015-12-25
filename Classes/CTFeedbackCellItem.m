@@ -36,6 +36,7 @@
 
     cell.textLabel.text = nil;
     cell.detailTextLabel.text = nil;
+    cell.detailTextLabel.adjustsFontSizeToFitWidth = true;
     cell.accessoryType = UITableViewCellAccessoryNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 }
