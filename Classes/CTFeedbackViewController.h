@@ -32,6 +32,7 @@
 @property (nonatomic, assign) BOOL hidesAppBuildCell;
 @property (nonatomic, assign) BOOL hidesAdditionalContent;
 @property (nonatomic, assign) BOOL useCustomCallback;
+@property (nonatomic, assign) BOOL hideBackBarButtonItemTitle;
 
 @property (nonatomic, readonly) NSString *platformString;
 @property (nonatomic, readonly) NSString *systemVersion;
