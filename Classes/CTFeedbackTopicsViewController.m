@@ -31,7 +31,7 @@ static NSString *CTFeedbackTopicsViewControllerCellIdentifier = @"Cell";
     [super viewDidLoad];
 
     self.title = CTFBLocalizedString(@"Topics");
-
+    self.tableView.backgroundColor = self.backgroundColor;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CTFeedbackTopicsViewControllerCellIdentifier];
 }
 

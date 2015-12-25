@@ -187,6 +187,7 @@ typedef NS_ENUM(NSInteger, CTFeedbackSection){
         CTFeedbackTopicsViewController *topicsViewController = [[CTFeedbackTopicsViewController alloc] initWithStyle:UITableViewStyleGrouped];
         topicsViewController.topics = sender.topics;
         topicsViewController.localizedTopics = sender.localizedTopics;
+        topicsViewController.backgroundColor = sender.tableView.backgroundColor;
         topicsViewController.action = ^(NSString *selectedTopic) {
             weakSelf.selectedTopic = selectedTopic;
             NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:CTFeedbackSectionInput];
