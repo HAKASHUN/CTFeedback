@@ -100,7 +100,7 @@ typedef NS_ENUM(NSInteger, CTFeedbackSection){
 
     self.cellItems = @[self.emailCellItems, self.inputCellItems, self.additionCellItems ,self.deviceInfoCellItems, self.appInfoCellItems];
 
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:CTFBLocalizedString(@"Mail") style:UIBarButtonItemStylePlain target:self action:@selector(sendButtonTapped:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:CTFBLocalizedString(@"Send") style:UIBarButtonItemStylePlain target:self action:@selector(sendButtonTapped:)];
     if (self.hideBackBarButtonItemTitle) {
       self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target: nil action:nil];
     }
