@@ -175,6 +175,7 @@ typedef NS_ENUM(NSInteger, CTFeedbackSection){
     self.emailCellItem = [CTFeedbackFieldCellItem new];
     self.emailCellItem.textField.placeholder = CTFBLocalizedString(@"E-mail");
     self.emailCellItem.textField.keyboardType = UIKeyboardTypeEmailAddress;
+    self.emailCellItem.textField.spellCheckingType = UITextSpellCheckingTypeNo;
     if(self.defaultUserEmail) {
       self.emailCellItem.textField.text = self.defaultUserEmail;
     }
