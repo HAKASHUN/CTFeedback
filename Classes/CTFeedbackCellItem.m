@@ -79,7 +79,8 @@
 {
     self = [super init];
     if (self) {
-        self.textView = [[UITextView alloc] initWithFrame:CGRectMake(5, 0, 310, ContentCellHeight)];
+        CGFloat width = [UIScreen mainScreen].bounds.size.width;
+        self.textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 0, width - 30, ContentCellHeight)];
         self.textView.text = self.content;
         self.textView.delegate = self;
         self.textView.scrollEnabled = NO;
@@ -126,7 +127,8 @@
 {
     self = [super init];
     if (self) {
-        self.textField = [[UITextField alloc] initWithFrame:CGRectMake(15, 0, 320 - 30, self.cellHeight)];
+        CGFloat width = [UIScreen mainScreen].bounds.size.width;
+        self.textField = [[UITextField alloc] initWithFrame:CGRectMake(15, 0, width - 30, self.cellHeight)];
         self.textField.delegate = self;
         self.textField.font = [UIFont systemFontOfSize:14];
         self.textField.backgroundColor = [UIColor clearColor];
